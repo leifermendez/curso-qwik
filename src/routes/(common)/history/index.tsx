@@ -1,5 +1,9 @@
 import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
-  return(<>Register Page</>)
+    return (
+        <div>
+            Soy pagina HISTORY
+        </div>
+    )
 })
