@@ -3,7 +3,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm i
 COPY . .
-ARG RAILWAY_STATIC_URL
-ARG PUBLIC_URL
+RUN npm run build
 ARG PORT
 CMD ["npm", "run","deploy"]
